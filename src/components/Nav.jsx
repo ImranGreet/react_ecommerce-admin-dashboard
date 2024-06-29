@@ -1,4 +1,11 @@
 import Profile from "../assets/react.svg";
+import AuthInfo from "./Utilities/AuthInfo";
+import Languages from "./Utilities/Languages";
+import Notifications from "./Utilities/Notifications";
+import SystemStatusNotifications from "./Utilities/SystemStatusNotifications";
+
+
+
 
 const Nav = () => {
   return (
@@ -35,6 +42,11 @@ const Nav = () => {
                   <img src={Profile} alt="Profile Picture of Imran" />
                 </a>
               </li>
+              <AuthInfo/>
+              <Notifications/>
+              <SystemStatusNotifications/>
+              <Languages/>
+              {/* <Profile/> */}
             </ul>
           </div>
         </div>
