@@ -16,7 +16,7 @@ const SystemStatusNotifications = ({showComp}) => {
   ];
   return (
     <>
-      <ul className={`ul-notification-container absolute top-20  right-8 systemStatus bg-white ${
+      <ul className={`ul-notification-container absolute top-20 z-40  right-8 systemStatus bg-white ${
         showComp.showSystemNotice ? "block" : "hidden"
       }`}>
         {notifications.map((notice, index) => (

@@ -19,7 +19,7 @@ const AuthInfo = ({ showComp }) => {
 
   return (
     <ul
-      className={`ul-notification-container absolute top-20 right-10   bg-white ${
+      className={`ul-notification-container absolute top-20 right-10 z-40  bg-white ${
         showComp.authInfo ? "block" : "hidden"
       }`}
     >

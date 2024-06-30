@@ -1,4 +1,4 @@
-import { sidebarItems } from "../scripts/sidebarUtilities.jsx";
+import { sidebarItems } from "./Utilities/sidebarUtilities.jsx";
 
 const Sidebar = ({ isToggled, toggleValue }) => {
   return (

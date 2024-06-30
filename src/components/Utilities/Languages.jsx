@@ -14,7 +14,7 @@ const Languages = ({showComp}) => {
   ];
 
   return (
-    <ul className={`ul-notification-container absolute top-20  right-24  bg-white ${
+    <ul className={`ul-notification-container absolute top-20 z-40   right-24  bg-white ${
       showComp.language ? "block" : "hidden"
     }`}>
       <li className="p-2 font-bold text-xl">
