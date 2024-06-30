@@ -1,9 +1,11 @@
 import { FaBars, FaBell, FaRotateRight, FaFlagUsa } from "react-icons/fa6";
 import Profile from "../assets/react.svg";
+/*components*/
 import AuthInfo from "./Utilities/AuthInfo";
 import Languages from "../components/Utilities/Languages";
 import Notifications from "./Utilities/Notifications";
 import SystemStatusNotification from "./Utilities/SystemStatusNotifications";
+/*scripts*/
 import { useState, useEffect } from "react";
 import { showUtlityComponent as initialUtilityState } from "../scripts/utlity";
 
