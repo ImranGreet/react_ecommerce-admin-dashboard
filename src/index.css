@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .button-content-flex-start-center {
+    @apply flex justify-start items-center gap-x-2;
+  }
+
+  .ul-notification-container {
+    @apply w-64 px-3 py-2 rounded-md border border-gray-600/35 shadow-lg;
+  }
+
+  .button-content-flex-col-start-start {
+    @apply flex flex-col justify-start items-start gap-y-0.5;
+  }
+
+  .ul-notification-container > li:not(:last-child) {
+    @apply border-b border-slate-500/30;
+  }
+}

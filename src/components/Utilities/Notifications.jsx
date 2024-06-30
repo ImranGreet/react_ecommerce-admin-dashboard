@@ -1,43 +1,36 @@
 import ProfileImage from "../../assets/react.svg";
 
-const Notifications = () => {
+const Notifications = ({showComp}) => {
+  const people = [
+    { name: "Alice", period: 15 },
+    { name: "Bob", period: 22 },
+    { name: "Charlie", period: 7 },
+  ];
   return (
     <>
-      <ul className="border border-gray-500/15 w-64 px-3 py-5 rounded-md shadow-lg flex flex-col justify-between gap-y-2">
-        <li>
-          <a href="#">
-            <span className="inline-block mr-3">
-              <img src={ProfileImage} alt="" />
-            </span>
-            <span>Jhon Send a message </span>
-            <span>12 mins ago</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span className="inline-block mr-3">
-              <img src={ProfileImage} alt="" />
-            </span>
-            <span>Jhon Send a message </span>
-            <span>12 mins ago</span>
-          </a>
-        </li>
-        <li>
-          <div className="w-full h-0.5 bg-gray-500/35"></div>
-        </li>
-        <li>
-          <a href="#">
-            <span className="inline-block mr-3">
-              <img src={ProfileImage} alt="" />
-            </span>
-            <span>Jhon Send a message </span>
-            <span>12 mins ago</span>
-          </a>
-        </li>
-        <li>
-          <div className="w-full h-0.5 bg-gray-500/35"></div>
-        </li>
-        <li>
+      <ul className={`ul-notification-container absolute top-20  right-10 notifications bg-white ${
+        showComp.notification ? "block" : "hidden"
+      }`}>
+        {people.map((notifier, index) => (
+          <li key={index}>
+            <a href="#" className="button-content-flex-col-start-start p-2">
+              <span className="flex">
+                <img
+                  src={ProfileImage}
+                  alt=""
+                  width="20"
+                  height="10"
+                  className="mr-2"
+                />
+                <span> {notifier.name} Send a message </span>
+              </span>
+
+              <span className="ml-8"> {notifier.period} mins ago</span>
+            </a>
+          </li>
+        ))}
+
+        <li className="my-4 ml-8">
           <a href="#">
             <span>View More Messages</span>
           </a>

@@ -7,63 +7,33 @@ import {
   FaRightFromBracket,
 } from "react-icons/fa6";
 
-const AuthInfo = () => {
+const AuthInfo = ({ showComp }) => {
+  const menuItems = [
+    { icon: <FaPencil />, text: "Edit Profile", href: "#" },
+    { icon: <FaUser />, text: "View Profile", href: "#" },
+    { icon: <FaArrowsToCircle />, text: "Help Center", href: "#" },
+    { icon: <FaGlobe />, text: "Forum", href: "#" },
+    { icon: <FaGear />, text: "Account Settings", href: "#" },
+    { icon: <FaRightFromBracket />, text: "Logout", href: "#" },
+  ];
+
   return (
-    <ul className="border border-gray-500/15 w-64 px-3 py-5 rounded-md shadow-lg flex flex-col justify-between gap-y-2">
-      <li>
-        <a href="#">
-          <span className="inline-block mr-3">
-            <FaPencil />
-          </span>
-          Edit Profile
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span className="inline-block mr-3">
-            <FaUser />
-          </span>
-          View Profile
-        </a>
-      </li>
-      <li>
-        <div className="w-full h-0.5 bg-gray-500/35"></div>
-      </li>
-      <li>
-        <a href="#">
-          <span className="inline-block mr-3">
-            <FaArrowsToCircle />
-          </span>
-          Help Center
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span className="inline-block mr-3">
-            <FaGlobe />
-          </span>
-          Forum{" "}
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span className="inline-block mr-3">
-            <FaGear />
-          </span>
-          Account Settings{" "}
-        </a>
-      </li>
-      <li>
-        <div className="w-full h-0.5 bg-gray-500/35"></div>
-      </li>
-      <li>
-        <a href="#">
-          <span className="inline-block mr-3">
-            <FaRightFromBracket />
-          </span>
-          Logout{" "}
-        </a>
-      </li>
+    <ul
+      className={`ul-notification-container absolute top-20 right-10   bg-white ${
+        showComp.authInfo ? "block" : "hidden"
+      }`}
+    >
+      {menuItems.map((item, index) => (
+        <li key={index}>
+          <a
+            href={item.href}
+            className="button-content-flex-start-center w-full py-2"
+          >
+            <span className="inline-block mr-1">{item.icon}</span>
+            {item.text}
+          </a>
+        </li>
+      ))}
     </ul>
   );
 };
