@@ -1,19 +1,9 @@
 import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
+ 
   RouterProvider,
 } from "react-router-dom";
-import MainLayout from "./Layouts/MainLayout";
-import ProductTable from "./Pages/ProductTable";
+import router from "./routes";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<MainLayout />}>
-      <Route index element={<ProductTable />} />
-    </Route>
-  )
-);
 
 const App = () => {
   return (
