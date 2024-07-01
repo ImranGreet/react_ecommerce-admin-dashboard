@@ -11,11 +11,15 @@ const MainLayout = () => {
   };
   return (
     <>
-      <div className="">
+      <div className="w-full">
         <Nav isToggled={isToggled} toggleValue={toggleValue} />
         <Sidebar isToggled={isToggled} />
 
-        <main className="mt-48  ml-96">
+        <main
+          className={`px-1 h-full  mx-auto fixed  z-0 overflow-y-auto mt-24 mb-10 right-2 ${
+            isToggled ? "w-[92%]  " : "w-[84%] "
+          } `}
+        >
           <Outlet />
         </main>
       </div>

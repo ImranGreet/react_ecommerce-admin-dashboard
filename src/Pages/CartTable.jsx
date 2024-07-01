@@ -1,9 +1,9 @@
-const ProductTable = () => {
+const cartTable = () => {
   return (
     <>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg w-full h-screen">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-500 dark:bg-gray-700 dark:text-gray-400 sticky top-0">
+          <thead className="text-xs text-gray-50 uppercase bg-gray-500 dark:bg-gray-700 dark:text-gray-400 sticky top-0 ">
             <tr>
               <th scope="col" className="px-6 py-3">
                 Product name
@@ -752,4 +752,4 @@ const ProductTable = () => {
   );
 };
 
-export default ProductTable;
+export default cartTable;

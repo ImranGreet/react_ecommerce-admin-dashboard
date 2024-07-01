@@ -53,7 +53,7 @@ const Nav = ({ isToggled, toggleValue }) => {
 
   return (
     <>
-      <nav className="bg-inherit shadow-lg fixed left-0 right-0 flex top-0">
+      <nav className="bg-inherit shadow-lg fixed left-0 right-0 flex top-0 z-50 bg-white">
         <div
           className={` border-r border-slate-200 text-center py-6 ${
             isToggled ? "w-36" : "w-72"
