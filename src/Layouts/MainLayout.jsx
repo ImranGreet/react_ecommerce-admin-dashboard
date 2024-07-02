@@ -16,7 +16,7 @@ const MainLayout = () => {
         <Sidebar isToggled={isToggled} />
 
         <main
-          className={`px-1 min-h-screen  mx-auto fixed  z-0 overflow-y-auto my-24 right-2 ${
+          className={`px-1 max-h-screen  mx-auto fixed  z-0 overflow-y-auto my-24 right-2 ${
             isToggled ? "w-[92%]  " : "w-[84%] "
           } `}
         >
