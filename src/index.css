@@ -37,8 +37,8 @@
     tr > th {
         @apply px-6 py-5;
     }
-    tr > td {
-        @apply px-6 py-4;
+    tr > td,th {
+        @apply px-6 py-4 border border-red-200/35;
     }
     td > a.action {
         @apply font-medium text-blue-600 dark:text-blue-500 hover:underline;

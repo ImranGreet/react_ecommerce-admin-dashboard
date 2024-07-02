@@ -52,7 +52,7 @@ const ProductTable = () => {
                                         src={product.image}
                                         alt=""
                                         width="30"
-                                        height="20"
+                                        height="5"
                                     />
                                 </td>
                                 <td>{product.rating.rate}</td>
