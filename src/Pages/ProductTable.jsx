@@ -1,7 +1,7 @@
 const ProductTable = () => {
   return (
     <>
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg w-full h-screen">
+      <div className="relative overflow-x-auto shadow-md sm:rounded-lg w-full max-h-screen">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-500 dark:bg-gray-700 dark:text-gray-400 sticky top-0">
             <tr>
@@ -731,7 +731,7 @@ const ProductTable = () => {
                 scope="row"
                 className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
-                Magic Mouse 2
+                Magic Mouse 2 from london
               </th>
               <td className="px-6 py-4">Black</td>
               <td className="px-6 py-4">Accessories</td>
