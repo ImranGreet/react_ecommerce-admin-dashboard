@@ -27,46 +27,27 @@ const ProductTable = () => {
                 <table className="custom-table">
                     <thead className="custom-table-head">
                         <tr>
-                            <th scope="col">Product name</th>
-                            <th scope="col">Product Thumbnail</th>
-                            <th scope="col">Rating</th>
-                            <th scope="col">Category</th>
-                            <th scope="col">Price</th>
-
-                            <th scope="col">
-                                <span>Action</span>
-                            </th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Area</th>
+                            <th scope="col">City</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Payment Method</th>
+                            <th scope="col">Payment Amount</th>
                         </tr>
                     </thead>
                     <tbody>
                         {products.map((product, index) => (
                             <tr key={index}>
-                                <th
-                                    scope="row"
-                                    className="table-row-first"
-                                >
-                                    {product.title}
-                                </th>
-                                <td>
-                                    <img
-                                        src={product.image}
-                                        alt=""
-                                        width="30"
-                                        height="20"
-                                    />
-                                </td>
-                                <td>{product.rating.rate}</td>
-                                <td>{product.category}</td>
-                                <td>{product.price}</td>
-
-                                <td className=" text-left">
-                                    <a
-                                        href="#"
-                                        className="action"
-                                    >
-                                        Edit
-                                    </a>
-                                </td>
+                                <td className="table-row-first">John Doe</td>
+                                <td>123-456-7890</td>
+                                <td>Downtown</td>
+                                <td>New York</td>
+                                <td>john.doe@example.com</td>
+                                <td>Not Available</td>
+                                <td>Credit Card</td>
+                                <td>$ {product.price}</td>
                             </tr>
                         ))}
                     </tbody>

@@ -8,7 +8,7 @@ const Notifications = ({showComp}) => {
   ];
   return (
     <>
-      <ul className={`ul-notification-container absolute top-20 z-40  right-10 notifications bg-white ${
+      <ul className={`ul-notification-container nav-card-position right-10 notifications bg-white ${
         showComp.notification ? "block" : "hidden"
       }`}>
         {people.map((notifier, index) => (

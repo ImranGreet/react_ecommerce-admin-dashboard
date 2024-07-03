@@ -53,7 +53,7 @@ const Nav = ({ isToggled, toggleValue }) => {
 
   return (
     <>
-      <nav className="bg-inherit shadow-lg fixed left-0 right-0 flex top-0 z-50 bg-white">
+      <nav className="bg-inherit shadow-lg fixed left-0 right-0 flex top-0 z-50 bg-white w-full">
         <div
           className={` border-r border-slate-200 text-center py-6 ${
             isToggled ? "w-36" : "w-72"
@@ -61,7 +61,7 @@ const Nav = ({ isToggled, toggleValue }) => {
         >
           <h1>Xenmesh</h1>
         </div>
-        <div className="flex justify-between items-center px-8 py-4 w-full">
+        <div className="flex justify-between items-center px-8 py-4 flex-1">
           <div className="flex ">
             <button
               className="mr-10 p-1 border border-gray-300 rounded-md w-10 h-10 flex justify-center items-center shadow-sm"
