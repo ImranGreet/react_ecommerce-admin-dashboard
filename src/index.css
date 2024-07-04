@@ -37,37 +37,61 @@
     tr > th {
         @apply px-6 py-5;
     }
-    tr > td,th {
+    tr > td,
+    th {
         @apply px-6 py-4 border border-red-200/35;
     }
     td > a.action {
         @apply font-medium text-blue-600 dark:text-blue-500 hover:underline;
     }
-    .nav-card-position{
+    .nav-card-position {
         @apply absolute top-[76px] right-10 z-[99];
     }
 
     /* sidebar */
-    .sidebar{
-      @apply h-full border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700;
-
+    .sidebar {
+        @apply h-full border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700;
     }
-    .sidebar-fixed-left{
+    .sidebar-fixed-left {
         @apply shadow-lg bg-white fixed top-[76px]   z-50 bottom-0 left-0;
     }
-    .sidebar-content{
+    .sidebar-content {
         @apply h-full overflow-y-auto bg-white dark:bg-gray-800;
     }
-    .sidebar-list{
+    .sidebar-list {
         @apply space-y-2 font-medium mt-10;
     }
-    .sidebar-item{
+    .sidebar-item {
+    }
+    .sidebar-route {
+        @apply flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700;
+    }
+    .sidebar-route-text {
+        @apply inline-flex items-center justify-center px-2  text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300;
+    }
 
+    /* buttons */
+    .navbar-screen-toggler-button {
+        @apply flex justify-center items-center mr-10 p-1 border border-gray-300 rounded-md w-10 h-10 hover:outline hover:outline-1 hover:outline-gray-500 hover:transition-all hover:duration-100 hover:delay-200;
     }
-    .sidebar-route{
-        @apply flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 ;
+
+    /* navs*/
+
+    .header__navigation {
+        @apply bg-inherit shadow-lg fixed left-0 right-0 flex top-0 z-50 bg-white w-full;
     }
-    .sidebar-route-text{
-        @apply inline-flex items-center justify-center px-2  text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300
+    .brand-name-logo {
+        @apply border-r border-slate-200 text-center py-6
     }
+    .navbar__left-section{
+        @apply flex justify-between items-center px-8 py-4;
+    }
+    .navbar__search-input{
+        @apply w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none
+    }
+    .navbar-cart-cotroller{
+        @apply rounded-md w-10 h-10 flex justify-center items-center shadow-sm mr-3 p-1 border
+        border-gray-300
+    }
+    
 }
