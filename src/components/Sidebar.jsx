@@ -6,7 +6,7 @@ const Sidebar = ({ isToggled, toggleValue }) => {
       <aside
         id="logo-sidebar"
         className={`sidebar sidebar-fixed-left  ${
-          isToggled ? "w-36" : "w-72"
+          isToggled ? "w-36 toggle-screen-animation" : "w-72 toggle-screen-animation"
         }`}
         aria-label="Sidebar"
       >

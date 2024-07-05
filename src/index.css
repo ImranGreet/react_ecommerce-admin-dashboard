@@ -81,17 +81,27 @@
         @apply bg-inherit shadow-lg fixed left-0 right-0 flex top-0 z-50 bg-white w-full;
     }
     .brand-name-logo {
-        @apply border-r border-slate-200 text-center py-6
+        @apply border-r border-slate-200 text-center py-6;
     }
-    .navbar__left-section{
+    .navbar__left-section {
         @apply flex justify-between items-center px-8 py-4;
     }
-    .navbar__search-input{
-        @apply w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none
+    .focus-outline {
+        @apply focus:outline-none focus:outline focus:outline-1 focus:outline-gray-200;
     }
-    .navbar-cart-cotroller{
-        @apply rounded-md w-10 h-10 flex justify-center items-center shadow-sm mr-3 p-1 border
-        border-gray-300
+    .navbar__search-input {
+        @apply w-full px-3 py-2 rounded-md border border-gray-300;
     }
-    
+    .navbar-cart-cotroller {
+        @apply rounded-md w-10 h-10 flex justify-center items-center shadow-sm mr-3 p-1 border 
+        border-gray-300;
+    }
+
+    /* aniamtion */
+    .toggle-screen-animation {
+        @apply transition-all duration-500;
+    }
+    .toggle-router-screen-animation {
+        @apply transition-all duration-200;
+    }
 }

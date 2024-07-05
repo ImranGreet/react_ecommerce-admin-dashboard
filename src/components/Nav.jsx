@@ -55,7 +55,7 @@ const Nav = ({ isToggled, toggleValue }) => {
         <>
             <nav className="header__navigation  ">
                 <div
-                    className={`brand-name-logo ${isToggled ? "w-36" : "w-72"}`}
+                    className={`brand-name-logo  ${isToggled ? "w-36 toggle-screen-animation" : "w-72 toggle-screen-animation"}`}
                 >
                     <h1>
                         <img
@@ -98,7 +98,7 @@ const Nav = ({ isToggled, toggleValue }) => {
                                     name="searchparams"
                                     id="searchparams"
                                     placeholder="Search Your Query"
-                                    className="navbar__search-input"
+                                    className="navbar__search-input focus-outline"
                                 />
                             </div>
                         </form>
@@ -107,7 +107,7 @@ const Nav = ({ isToggled, toggleValue }) => {
                         <ul className="flex gap-x-2 justify-center">
                             <li>
                                 <button
-                                    className="language-button navbar-cart-cotroller  "
+                                    className="language-button navbar-cart-cotroller  focus-outline"
                                     onClick={() => toggleComponent("language")}
                                 >
                                     <FaFlagUsa className="text-xl" />
@@ -115,7 +115,7 @@ const Nav = ({ isToggled, toggleValue }) => {
                             </li>
                             <li>
                                 <button
-                                    className="notifications-button   navbar-cart-cotroller"
+                                    className="notifications-button   navbar-cart-cotroller focus-outline"
                                     onClick={() =>
                                         toggleComponent("notification")
                                     }
@@ -125,8 +125,7 @@ const Nav = ({ isToggled, toggleValue }) => {
                             </li>
                             <li>
                                 <button
-                                    className="system-status-button navbar-cart-cotroller 
-                 "
+                                    className="system-status-button navbar-cart-cotroller focus-outline"
                                     onClick={() =>
                                         toggleComponent("showSystemNotice")
                                     }
